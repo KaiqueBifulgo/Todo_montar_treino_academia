@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Academia</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="todo-container">
+        <header>
+            <h1>Treinos da semana</h1>
+        </header>
+        <form id="todo-form">
+            <p>Adicionar um novo treino:</p>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="Seu treino">
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <form id="edit-form" class="hide">
+            <p>Edite seu treino:</p>
+            <div class="form-control">
+              <input type="text" id="edit-input" placeholder="Editar trieno">
+              <button type="submit">
+                 <i class="fa-solid fa-check-double"></i>
+              </button>
+            </div>
+            <button id="cancel-edit-btn">Cancelar edição</button>
+        </form>
+        <div id="toolbar">
+            <div id="search">
+                <h4>Buscar treino</h4>
+                <form>
+                    <input type="text" id="search-input" placeholder="Buscar...">
+                    <button id="erased-button">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+            <div id="filter">
+                <h4>Filtrar</h4>
+                <select id="filter-select">
+                    <option value="all">Todos os treinos</option>
+                    <option value="done">Treinos concluidos</option>
+                    <option value="todo">Treinos restantes</option>
+                </select>
+            </div>
+            </div>
+            <div class="todo-list"></div>
+    </div>
+</body>
+</html>

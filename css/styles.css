@@ -1,0 +1,160 @@
+/* Estilos gerais */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: #201818;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background-image: url("../img/ImagemDeFundo.jpeg");
+    background-size: cover;
+}
+
+button {
+    background-color: #726868;
+    color: #201818;
+    border: 2px solid #201818;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #201818;
+    color: #e7dfdf;
+}
+
+button:hover > i {
+    color: #e7dfdf;
+}
+
+button i {
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input, select {
+    padding: 0.25rem 0.5rem ;
+}
+
+.hide {
+    display: none;
+}
+
+/* todo header */
+.todo-container {
+    max-width: 500px;
+    margin: 3rem auto;
+    background-color: #DAA520;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.todo-container header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #150808;
+}
+
+/* FORM */
+#todo-form, #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid #150808;
+}
+
+#todo-form p,
+#todo-edit p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: 0.4rem;
+}
+
+#cancel-edit-btn {
+    margin-top: 1rem;
+}
+
+/* TOOLBAR */
+#toolbar {
+    padding: 1rem;
+    border-bottom: 1px solid #150808;
+    display: flex;
+}
+
+#toolbar h4 {
+    margin-bottom: 0.5rem;
+}
+
+#search {
+    border-right: 1px solid #150808;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select {
+    flex: 1;
+}
+
+
+/* TODO LIST */
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #150808;
+    transition: 0.5s;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.todo button {
+    margin-left: 0.4rem;
+}
+
+.done {
+    background-color: #726868;
+}
+
+.done h3 {
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+}
